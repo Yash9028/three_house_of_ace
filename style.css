@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Figtree", sans-serif;
+}
+main {
+  min-height: 100vh;
+  min-width: 100vw;
+  background-color: black;
+  color: black;
+  background-image: url(doodle.jpg);
+  background-repeat: repeat;
+  /* filter: sepia(); */
+  padding-top: 1px;
+}
+h1 {
+  text-align: center;
+  margin-top: 30px;
+}
+.container {
+  height: 500px;
+  width: 650px;
+  border: 2px solid black;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+}
+.card1,
+.card2,
+.card3 {
+  height: 300px;
+  width: 200px;
+  border: 2px solid #000000;
+  text-align: center;
+  border-radius: 30px;
+  transition: all 1s;
+}
+.card1 {
+  background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+  transform: rotate(-5deg);
+}
+.card2 {
+  background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+}
+.card3 {
+  background-image: linear-gradient(
+    to top,
+    #fdcbf1 0%,
+    #fdcbf1 1%,
+    #e6dee9 100%
+  );
+  transform: rotate(5deg);
+}
+.card1:hover,
+.card2:hover,
+.card3:hover {
+  transform: scale(1.1);
+  box-shadow: 10px 10px;
+}
